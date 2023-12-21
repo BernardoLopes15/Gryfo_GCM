@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.916
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gryfo GCM", "Gryfo GCM\Gryfo GCM.csproj", "{7C9C3F31-B6ED-40AB-B4C6-C55D21335E7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C9C3F31-B6ED-40AB-B4C6-C55D21335E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9C3F31-B6ED-40AB-B4C6-C55D21335E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9C3F31-B6ED-40AB-B4C6-C55D21335E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9C3F31-B6ED-40AB-B4C6-C55D21335E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5624CD50-BCE6-406C-B4D6-393E1381BDA5}
+	EndGlobalSection
+EndGlobal
