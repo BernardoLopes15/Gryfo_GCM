@@ -20,7 +20,7 @@ namespace Gryfo_GCM
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            comboBox2.SelectedIndex = 1;
         }
 
         private void textBoxAdicionarNumero_KeyPress(object sender, KeyPressEventArgs e)

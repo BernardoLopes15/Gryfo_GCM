@@ -581,6 +581,7 @@
             this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(192, 40);
+            this.textBox1.MaxLength = 120;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(874, 29);
             this.textBox1.TabIndex = 1;
@@ -644,7 +645,7 @@
             this.textBox18.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox18.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox18.Location = new System.Drawing.Point(113, 19);
-            this.textBox18.MaxLength = 2000;
+            this.textBox18.MaxLength = 100;
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(823, 29);
             this.textBox18.TabIndex = 3;
@@ -657,7 +658,7 @@
             this.textBoxAdicionarNumero.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBoxAdicionarNumero.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAdicionarNumero.Location = new System.Drawing.Point(113, 119);
-            this.textBoxAdicionarNumero.MaxLength = 10000;
+            this.textBoxAdicionarNumero.MaxLength = 10;
             this.textBoxAdicionarNumero.Name = "textBoxAdicionarNumero";
             this.textBoxAdicionarNumero.Size = new System.Drawing.Size(61, 29);
             this.textBoxAdicionarNumero.TabIndex = 23;
@@ -665,14 +666,16 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox2.ItemHeight = 16;
             this.comboBox2.Items.AddRange(new object[] {
-            "Av."});
+            "Av.",
+            "Rua"});
             this.comboBox2.Location = new System.Drawing.Point(20, 22);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(66, 24);
             this.comboBox2.TabIndex = 19;
-            this.comboBox2.Text = "Rua";
             // 
             // label27
             // 
@@ -692,7 +695,7 @@
             this.textBox25.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox25.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox25.Location = new System.Drawing.Point(113, 70);
-            this.textBox25.MaxLength = 2000;
+            this.textBox25.MaxLength = 70;
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(823, 29);
             this.textBox25.TabIndex = 20;
@@ -744,7 +747,7 @@
             this.textBox24.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox24.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox24.Location = new System.Drawing.Point(155, 458);
-            this.textBox24.MaxLength = 200;
+            this.textBox24.MaxLength = 30;
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(849, 29);
             this.textBox24.TabIndex = 15;
@@ -766,7 +769,7 @@
             this.textBox23.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox23.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox23.Location = new System.Drawing.Point(155, 400);
-            this.textBox23.MaxLength = 2000;
+            this.textBox23.MaxLength = 100;
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(849, 29);
             this.textBox23.TabIndex = 13;
@@ -788,7 +791,7 @@
             this.textBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox22.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox22.Location = new System.Drawing.Point(155, 345);
-            this.textBox22.MaxLength = 200;
+            this.textBox22.MaxLength = 100;
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(849, 29);
             this.textBox22.TabIndex = 11;
@@ -810,6 +813,7 @@
             this.textBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox21.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox21.Location = new System.Drawing.Point(884, 298);
+            this.textBox21.MaxLength = 6;
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(120, 29);
             this.textBox21.TabIndex = 9;
@@ -898,7 +902,7 @@
             this.Controls.Add(this.tabControl1);
             this.MaximumSize = new System.Drawing.Size(1180, 820);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Gryfo GCM";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -978,12 +982,12 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBoxAdicionarNumero;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 
