@@ -36,7 +36,7 @@ namespace Gryfo_GCM
         // tela Cadastrar ocorrencia
         private void btn_limpar_Click(object sender, EventArgs e)
         {
-            textBox1.Text = string.Empty;
+            textBox1.Clear();
         }
 
         private void textBox19_KeyPress(object sender, KeyPressEventArgs e)
@@ -169,6 +169,29 @@ namespace Gryfo_GCM
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Deseja realmente fechar o aplicativo?", "Confirmação", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void limpar_Click(object sender, EventArgs e)
+        {
+            textBox18.Clear();
+            textBox25.Clear();
+            textBoxAdicionarNumero.Clear();
+            textBox19.Clear();
+            textBox20.Clear();
+            textBox21.Clear();
+            textBox22.Clear();
+            textBox23.Clear();
+            textBox24.Clear();
         }
     }
 }

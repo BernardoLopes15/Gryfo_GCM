@@ -78,7 +78,7 @@
             this.label27 = new System.Windows.Forms.Label();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.limpar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -599,7 +599,7 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.panel4);
-            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.limpar);
             this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.textBox24);
             this.tabPage2.Controls.Add(this.label26);
@@ -710,20 +710,21 @@
             this.label20.TabIndex = 21;
             this.label20.Text = "Bairro:";
             // 
-            // button2
+            // limpar
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.button2.Location = new System.Drawing.Point(195, 538);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 43);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Limpar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.limpar.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.limpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.limpar.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.limpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.limpar.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.limpar.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.limpar.Location = new System.Drawing.Point(195, 538);
+            this.limpar.Name = "limpar";
+            this.limpar.Size = new System.Drawing.Size(128, 43);
+            this.limpar.TabIndex = 17;
+            this.limpar.Text = "Limpar";
+            this.limpar.UseVisualStyleBackColor = false;
+            this.limpar.Click += new System.EventHandler(this.limpar_Click);
             // 
             // button3
             // 
@@ -902,7 +903,9 @@
             this.Controls.Add(this.tabControl1);
             this.MaximumSize = new System.Drawing.Size(1180, 820);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gryfo GCM";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -974,7 +977,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button limpar;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.Label label26;
