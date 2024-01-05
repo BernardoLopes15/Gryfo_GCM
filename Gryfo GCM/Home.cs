@@ -20,6 +20,10 @@ namespace Gryfo_GCM
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            string message = Database.ConnectToDatabase();
+
+            MessageBox.Show(message);
+
             comboBox2.SelectedIndex = 1;
         }
 
